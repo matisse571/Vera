@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout android:id="@+id/RelativeLayout01"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF0099CC">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="480dp"
+        android:layout_height="800dp"
+
+
+        android:cropToPadding="false"
+        android:adjustViewBounds="false"
+        android:layout_alignParentTop="true"
+
+        android:scaleType="fitXY" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="240dp">
+
+        <TableRow
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/city_field"
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="13sp"
+                android:gravity="center_horizontal"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            >
+            <TextView
+                android:id="@+id/updated_field"
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="11sp"
+                android:gravity="center_horizontal"/>
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_height="match_parent"
+            android:fontFamily="monospace"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            >
+            <TextView
+                android:id="@+id/details_field"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12sp"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            >
+            <TextView
+                android:id="@+id/windSpeed"
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12sp"
+                android:gravity="center_horizontal"
+                />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            >
+
+
+
+
+            <TextView
+                android:id="@+id/current_temperature_field"
+                android:fontFamily="monospace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="30sp"
+                android:gravity="center_horizontal"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+    <AnalogClock
+        android:layout_height="wrap_content"
+
+        android:layout_width="240dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TableLayout android:id="@+id/file_modification_monitor_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <TableRow  android:minHeight="80dp"
+                android:gravity="center">
+
+                <Button android:id="@+id/btn_first"
+                    android:text="morning"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:minHeight="80dp"
+                    android:minWidth="80dp"
+                    android:layout_width="match_parent"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:fontFamily="monospace"
+                    android:textSize="18sp"
+                    android:typeface="monospace"
+                    android:textAlignment="center"
+                    android:background="@android:drawable/btn_default"
+                    tools:backgroundTint="@android:color/holo_blue_dark"
+                    android:backgroundTint="@android:color/holo_blue_dark"
+                    />
+
+                <Button android:id="@+id/btn_second"
+                    android:text="2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:minHeight="80dp"
+                    android:minWidth="80dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:fontFamily="monospace"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:background="@android:drawable/btn_default"
+                    tools:backgroundTint="@android:color/holo_blue_dark"
+                    android:textAlignment="center"/>
+            </TableRow>
+            <TableRow android:minHeight="80dp"
+                android:gravity="center">
+                <Button android:id="@+id/btn_third"
+                    android:text="cooking"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:minHeight="80dp"
+                    android:minWidth="80dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:fontFamily="monospace"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:background="@android:drawable/btn_default"
+                    tools:backgroundTint="@android:color/holo_blue_dark"
+                    android:textAlignment="center"/>
+                <Button android:id="@+id/btn_forth"
+                    android:text="dining"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:minHeight="80dp"
+                    android:minWidth="80dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:fontFamily="monospace"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:background="@android:drawable/btn_default"
+                    tools:backgroundTint="@android:color/holo_blue_dark"
+                    android:textAlignment="center"/>
+            </TableRow>
+                <TableRow android:minHeight="80dp"
+                    android:gravity="center">
+                <Button android:id="@+id/btn_fifth"
+                    android:text="5"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:minHeight="80dp"
+                    android:minWidth="80dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:fontFamily="monospace"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:background="@android:drawable/btn_default"
+                    tools:backgroundTint="@android:color/holo_blue_dark"
+                    android:textAlignment="center" />
+                <Button android:id="@+id/btn_sixth"
+                    android:text="movie"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:minHeight="80dp"
+                    android:minWidth="80dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:fontFamily="monospace"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:background="@android:drawable/btn_default"
+                    tools:backgroundTint="@android:color/holo_blue_dark"
+                    android:textAlignment="center"/>
+                </TableRow>
+            <TableRow android:minHeight="80dp"
+                android:gravity="center">
+                <Button android:id="@+id/btn_seventh"
+                    android:text="lights off"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:minHeight="80dp"
+                    android:minWidth="80dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:fontFamily="monospace"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:background="@android:drawable/btn_default"
+                    tools:backgroundTint="@android:color/holo_blue_dark"
+                    android:textAlignment="center"/>
+                <Button android:id="@+id/btn_eighth"
+                    android:text="house off"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:minHeight="80dp"
+                    android:minWidth="80dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:fontFamily="monospace"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:background="@android:drawable/btn_default"
+                    tools:backgroundTint="@android:color/holo_blue_dark"
+                    android:textAlignment="center"/>
+            </TableRow>
+        </TableLayout>
+
+        <ScrollView
+            android:scrollbars="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:layout_alignParentEnd="true">
+            <TextView android:id="@+id/file_modification_monitor_log"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                />
+        </ScrollView>
+
+
+</RelativeLayout>
